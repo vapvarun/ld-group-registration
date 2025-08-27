@@ -406,6 +406,7 @@ jQuery(document).ready(function ($) {
 			let editor = wp.data.select('core/editor');
 
 			if (
+				editor &&
 				editor.isSavingPost() &&
 				!editor.isAutosavingPost() &&
 				editor.didPostSaveRequestSucceed()
